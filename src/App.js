@@ -28,9 +28,11 @@ function App() {
   const { fetchCategoriesAgain, fetchProductsAgain } = useProducts();
 
   useEffect(() => {
-    fetchProductsAgain();
-    fetchCategoriesAgain();
-  }, []);
+  fetchProductsAgain();
+  fetchCategoriesAgain();
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, []);
 
   return (
     <div className="App">

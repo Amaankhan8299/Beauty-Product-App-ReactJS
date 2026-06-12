@@ -14,9 +14,10 @@ export const Cart = () => {
   } = useUtils();
 
   useEffect(() => {
-    updateCart();
-  }, []);
+  updateCart();
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, []);
   return (
     <>
       <h1 className="header-heading">

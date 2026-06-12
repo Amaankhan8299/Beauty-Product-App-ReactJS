@@ -6,16 +6,20 @@ export const Filters = () => {
     useProducts();
 
   useEffect(() => {
-    const handleWindowResize = () => {
-      if (window.innerWidth < 800) {
-        setShowFilters(false);
-      }
-    };
-    window.addEventListener("resize", handleWindowResize);
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
+  const handleWindowResize = () => {
+    if (window.innerWidth < 800) {
+      setShowFilters(false);
+    }
+  };
+
+  window.addEventListener("resize", handleWindowResize);
+
+  return () => {
+    window.removeEventListener("resize", handleWindowResize);
+  };
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, []);
 
   return (
     <>

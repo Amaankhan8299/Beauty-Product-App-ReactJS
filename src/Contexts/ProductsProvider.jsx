@@ -30,7 +30,6 @@ export const ProductsProvider = ({ children }) => {
       );
       // const cart = cartUnfiltered.shift();
       const wishlist = await fetchWishlist();
-      const wishlistNew = wishlist.shift();
       const categories = await fetchCategories();
       dispatch({
         type: "INITIAL_DATA",
@@ -137,8 +136,10 @@ export const ProductsProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    fetchData();
-  }, []);
+  fetchData();
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, []);
 
   return (
     <ProductsContext.Provider

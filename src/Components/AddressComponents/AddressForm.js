@@ -12,12 +12,14 @@ export const AddressForm = () => {
   } = useAddress();
 
   useEffect(() => {
-    if (address.id) {
-      return;
-    } else {
-      setAddress({ ...address, id: uuid() });
-    }
-  }, []);
+  if (address.id) {
+    return;
+  } else {
+    setAddress({ ...address, id: uuid() });
+  }
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, []);
 
   return (
     <div className="address-overlay">

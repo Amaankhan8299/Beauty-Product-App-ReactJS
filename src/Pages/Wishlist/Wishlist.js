@@ -6,9 +6,11 @@ export const Wishlist = () => {
   const { state } = useProducts();
   const { updateWishlist } = useUtils();
 
-  useEffect(() => {
-    updateWishlist();
-  }, []);
+ useEffect(() => {
+  updateWishlist();
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, []);
 
   return (
     <>

@@ -6,10 +6,12 @@ export const Products = () => {
   const { showFilters } = useProducts();
   const { updateWishlist, updateCart } = useUtils();
 
-  useEffect(() => {
-    updateCart();
-    updateWishlist();
-  }, []);
+ useEffect(() => {
+  updateCart();
+  updateWishlist();
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, []);
 
   return (
     <>
