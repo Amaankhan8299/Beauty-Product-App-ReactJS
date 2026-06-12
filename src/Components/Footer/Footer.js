@@ -2,12 +2,12 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <p className="footer-desc">
-        Copyright © 2023 | Lumina Luxe. | Rights Reserved | Imamul Haque Khan.
+        Copyright © 2026 | Lumina Luxe. | Rights Reserved | Amaan Khan.
       </p>
       <ul className="footer-list">
         <li>
           <a
-            href="https://www.linkedin.com/in/imamul-haque-khan-557032195"
+            href="https://www.linkedin.com/in/amaan-khan-1b8828246"
             target="_blank"
             rel="noreferrer"
           >
@@ -16,7 +16,7 @@ export const Footer = () => {
         </li>
         <li>
           <a
-            href="Nothing To Show"
+            href="https://x.com/amaankhan8299?s=11"
             target="_blank"
             rel="noreferrer"
           >
@@ -25,7 +25,7 @@ export const Footer = () => {
         </li>
         <li>
           <a
-            href="https://github.com/rajakhan017"
+            href="https://github.com/Amaankhan8299"
             target="_blank"
             rel="noreferrer"
           >
